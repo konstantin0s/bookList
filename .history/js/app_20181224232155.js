@@ -52,7 +52,7 @@ static displayBooks() {
   alert alert-${className}
    `;
    div.appendChild(document.createTextNode(message));
-   const container = document.querySelector('.container');
+   const container = document.querySelector('container');
    const form = document.querySelector('#book-form');
    container.insertBefore(div, form);
  }
@@ -78,7 +78,7 @@ const isbn = document.querySelector("#isbn").value;
 
 //Validate
 if (title === '' || author === '' || isbn === '') {
-UI.showAlert('Please fill in all fields', 'danger');
+  alert('Please fill in all fields.');
 } else {
 //Instantiate book
 const book = new Book(title, author, isbn);
