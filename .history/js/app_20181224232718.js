@@ -89,9 +89,6 @@ const book = new Book(title, author, isbn);
 //Add book to UI
 UI.addBookToList(book);
 
-//Show success message
-UI.showAlert('Book Added', 'success');
-
 //Clear Fields
 UI.clearFields();
 }
@@ -101,7 +98,4 @@ UI.clearFields();
 //Events: Remove a Book
 document.querySelector("#book-list").addEventListener("click", (e) => {
   UI.deleteBook(e.target);
-
-  //Book removed
-  UI.showAlert('Book Removed', 'success');
 })

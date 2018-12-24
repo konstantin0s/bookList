@@ -101,7 +101,4 @@ UI.clearFields();
 //Events: Remove a Book
 document.querySelector("#book-list").addEventListener("click", (e) => {
   UI.deleteBook(e.target);
-
-  //Book removed
-  UI.showAlert('Book Removed', 'success');
 })
